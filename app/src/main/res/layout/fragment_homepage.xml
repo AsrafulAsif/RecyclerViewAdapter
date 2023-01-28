@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Asif"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/userPassTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Asif"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_row"/>
+
+</LinearLayout>

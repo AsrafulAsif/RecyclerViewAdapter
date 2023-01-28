@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User name"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/outlinedTextField"
+        android:id="@+id/outlinedTextField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPasswordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outlinedTextField2"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="#645CBB"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
